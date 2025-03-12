@@ -42,19 +42,19 @@ const Experience = () => {
     const radius = 1;
 
     return (
-            <div className="canvas-wrapper">
-                <Canvas
-                    camera={{
-                        position: [0, 0, 5],
-                        fov: 45,
-                        near: 0.1,
-                        far: 1000,
-                    }}
-                >
-                    <NoiseSphere frequency={2} amplitude={0.7} radius={radius} />
-                    <OrbitControls />
-                </Canvas>
-            </div>
+        <div className="canvas-wrapper">
+            <Canvas
+                camera={{
+                    position: [0, 0, 5],
+                    fov: 45,
+                    near: 0.1,
+                    far: 1000,
+                }}
+            >
+                <NoiseSphere frequency={2} amplitude={0.7} radius={radius} />
+                <OrbitControls />
+            </Canvas>
+        </div>
     );
 };
 
